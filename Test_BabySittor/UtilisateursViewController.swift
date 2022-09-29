@@ -23,12 +23,12 @@ class UtilisateursViewController: UIViewController {
     
     func getDataUsers() {
         user.getUser { [weak self] resultat in
-            
+            DispatchQueue.main.async {
             switch resultat{
             case.failure(_):
                 self?.alertNoData()
             case.success(let result):
-                DispatchQueue.main.async {
+                
                     
                     for  data in result.data {
                         self?.arrayDataUsers.append(data)

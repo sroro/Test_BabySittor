@@ -1,10 +1,3 @@
-//
-//  UserTableViewCell.swift
-//  Test_BabySittor
-//
-//  Created by Rodolphe Schnetzer on 28/09/2022.
-//
-
 import UIKit
 import SDWebImage
 
@@ -37,7 +30,7 @@ class UserTableViewCell: UITableViewCell {
             guard let firstName = userCell?.firstName else { return }
             guard let lastName = userCell?.lastName else { return }
             guard let imageUrl = URL(string: userCell?.defaultPictureURL ?? imageFake ) else { return }
-            
+//            guard let review = userCell?.averageReviewScore else { return }
             
             identityUser.text = ("\(firstName) \(lastName)")
             mailUser.text = userCell?.email
@@ -49,14 +42,9 @@ class UserTableViewCell: UITableViewCell {
             if  userCell?.averageReviewScore == nil {
                 averageReview.text = "No review"
             } else {
-                averageReview.text = String("\(userCell?.averageReviewScore)")
+                guard let review = userCell?.averageReviewScore else { return }
+                averageReview.text = "\(review)"
             }
-            
-//            if userCell?.gender == .male {
-//                view.backgroundColor = UIColor(red: 126/255, green: 153/255, blue: 172/255, alpha: 255)
-//            } else  {
-//                view.backgroundColor = UIColor(red: 184/255, green: 154/255, blue: 191/255, alpha: 255)
-//            }
             
             if userCell?.locale == .fr {
                 placeUser.text = "🇫🇷"
@@ -65,7 +53,6 @@ class UserTableViewCell: UITableViewCell {
             }
         }
     }
-    
-    
-    
 }
+
+

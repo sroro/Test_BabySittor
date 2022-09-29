@@ -6,7 +6,7 @@
 import Foundation
 
 // MARK: - UserData
-struct UserData: Decodable {
+struct UserData: Codable {
     let count: Int
     let data: [UserInfos]
     let hasMore: Bool
@@ -22,32 +22,31 @@ struct UserData: Decodable {
 }
 
 // MARK: - Datum
-struct UserInfos: Decodable {
+struct UserInfos: Codable {
     let active: Bool
     let averageReviewScore: Double?
     let banned: Bool
-    let birthday: Birthday
+    let birthday: String?
     let cguAccepted: Bool
     let cguAcceptedAt: String?
     let country: Country
     let createdAt: String
-    let currentAddressID, currentPictureID: Int
-    let defaultPictureURL: String
+    let currentAddressID, currentPictureID: Int?
+    let defaultPictureURL: String?
     let datumDescription, education, email: String?
-    let emailAccepted: Bool?
-    let emailAcceptedAt: String?
+    let emailAccepted: Bool
+    let emailAcceptedAt: EmailAcceptedAt?
     let facebookFriendsTotalCount: Int?
     let facebookID, firebaseID: String?
     let firstName: String
-    let gender: Gender?
+    let gender: Gender
     let gensDeConfianceNbReferrers: Int?
     let gensDeConfianceURL: String?
     let hasBasicData: Bool
     let homeCardsSyncedAt: String?
     let id: Int
-    let isBanned, isCguAccepted: Bool
-    let isEmailAccepted: Bool?
-    let isSubscribed, isTelephoneVerified: Bool
+    let isBanned, isCguAccepted, isEmailAccepted, isSubscribed: Bool
+    let isTelephoneVerified: Bool
     let lastActivityAt, lastName: String
     let locale: Country
     let object: Object
@@ -99,29 +98,26 @@ struct UserInfos: Decodable {
     }
 }
 
-enum Birthday: String, Decodable {
-    case the19870912000000 = "1987-09-12 00:00:00"
-    case the19891107000000 = "1989-11-07 00:00:00"
-    case the19891108000000 = "1989-11-08 00:00:00"
-    case the19920429000000 = "1992-04-29 00:00:00"
-    case the20021114000000 = "2002-11-14 00:00:00"
-}
-
-enum Country: String, Decodable {
-    case en = "en"
+enum Country: String, Codable {
+    case be = "be"
     case fr = "fr"
 }
 
-enum Gender: String, Decodable {
+enum EmailAcceptedAt: String, Codable {
+    case the00000000000000 = "0000-00-00 00:00:00"
+    case the20190915173840 = "2019-09-15 17:38:40"
+    case the20220627214701 = "2022-06-27 21:47:01"
+}
+
+enum Gender: String, Codable {
     case female = "female"
     case male = "male"
 }
 
-enum Object: String, Decodable {
+enum Object: String, Codable {
     case user = "user"
 }
 
-enum StripeCustomerCurrency: String, Decodable {
+enum StripeCustomerCurrency: String, Codable {
     case eur = "eur"
-    case usd = "usd"
 }

@@ -28,15 +28,13 @@ final class UserNetworkService {
 
     func getUser(callback: @escaping (Result<UserData,Error>) -> Void) {
         
-        guard let userAPI = URL(string: "https://preprod-api.bbst.eu/test_tech")
+        guard let userAPI = URL(string: "https://api.bbst.eu/test_tech")
         else { return }
         
-        var request = URLRequest(url: userAPI)
-        request.setValue("GSsJ5fj5Jgi9rZuyUekmYDQWPrJHiUvS", forHTTPHeaderField: "x-windy-key")
         
         task?.cancel()
         
-        task = session.dataTask(with: request) { data, response, error in
+        task = session.dataTask(with: userAPI) { data, response, error in
             guard let data = data, error == nil else {
                 callback(.failure(Errors.noData))
                 return
