@@ -9,23 +9,34 @@
 /* Begin PBXBuildFile section */
 		4DEAD74A28E4D9A200273563 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAD74928E4D9A200273563 /* AppDelegate.swift */; };
 		4DEAD74C28E4D9A200273563 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAD74B28E4D9A200273563 /* SceneDelegate.swift */; };
-		4DEAD74E28E4D9A200273563 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAD74D28E4D9A200273563 /* ViewController.swift */; };
+		4DEAD74E28E4D9A200273563 /* UtilisateursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAD74D28E4D9A200273563 /* UtilisateursViewController.swift */; };
 		4DEAD75128E4D9A200273563 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DEAD74F28E4D9A200273563 /* Main.storyboard */; };
 		4DEAD75428E4D9A200273563 /* Test_BabySittor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAD75228E4D9A200273563 /* Test_BabySittor.xcdatamodeld */; };
 		4DEAD75628E4D9A300273563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DEAD75528E4D9A300273563 /* Assets.xcassets */; };
 		4DEAD75928E4D9A300273563 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DEAD75728E4D9A300273563 /* LaunchScreen.storyboard */; };
+		4DEAD79A28E4F0B500273563 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAD79928E4F0B500273563 /* UserData.swift */; };
+		4DEAD79C28E4F0E900273563 /* UserNetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAD79B28E4F0E900273563 /* UserNetworkAPI.swift */; };
+		4DEAD7A128E4F24700273563 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAD79F28E4F24700273563 /* UserTableViewCell.swift */; };
+		4DEAD7A228E4F24700273563 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DEAD7A028E4F24700273563 /* UserTableViewCell.xib */; };
+		4DEAD7A528E50B9300273563 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 4DEAD7A428E50B9300273563 /* SDWebImage */; };
+		4DEAD7A728E50D5600273563 /* Alert+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAD7A628E50D5600273563 /* Alert+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4DEAD74628E4D9A200273563 /* Test_BabySittor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_BabySittor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DEAD74928E4D9A200273563 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DEAD74B28E4D9A200273563 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4DEAD74D28E4D9A200273563 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4DEAD74D28E4D9A200273563 /* UtilisateursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilisateursViewController.swift; sourceTree = "<group>"; };
 		4DEAD75028E4D9A200273563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4DEAD75328E4D9A200273563 /* Test_BabySittor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Test_BabySittor.xcdatamodel; sourceTree = "<group>"; };
 		4DEAD75528E4D9A300273563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DEAD75828E4D9A300273563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DEAD75A28E4D9A300273563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DEAD79928E4F0B500273563 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		4DEAD79B28E4F0E900273563 /* UserNetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNetworkAPI.swift; sourceTree = "<group>"; };
+		4DEAD79F28E4F24700273563 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		4DEAD7A028E4F24700273563 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		4DEAD7A628E50D5600273563 /* Alert+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DEAD7A528E50B9300273563 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,16 +70,45 @@
 		4DEAD74828E4D9A200273563 /* Test_BabySittor */ = {
 			isa = PBXGroup;
 			children = (
-				4DEAD74928E4D9A200273563 /* AppDelegate.swift */,
-				4DEAD74B28E4D9A200273563 /* SceneDelegate.swift */,
-				4DEAD74D28E4D9A200273563 /* ViewController.swift */,
-				4DEAD74F28E4D9A200273563 /* Main.storyboard */,
-				4DEAD75528E4D9A300273563 /* Assets.xcassets */,
-				4DEAD75728E4D9A300273563 /* LaunchScreen.storyboard */,
+				4DEAD79828E4F0A300273563 /* Model */,
+				4DEAD76128E4DB7500273563 /* StoryBoard */,
+				4DEAD76028E4DB0B00273563 /* OtherFiles */,
+				4DEAD74D28E4D9A200273563 /* UtilisateursViewController.swift */,
 				4DEAD75A28E4D9A300273563 /* Info.plist */,
 				4DEAD75228E4D9A200273563 /* Test_BabySittor.xcdatamodeld */,
 			);
 			path = Test_BabySittor;
+			sourceTree = "<group>";
+		};
+		4DEAD76028E4DB0B00273563 /* OtherFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4DEAD74928E4D9A200273563 /* AppDelegate.swift */,
+				4DEAD74B28E4D9A200273563 /* SceneDelegate.swift */,
+				4DEAD7A628E50D5600273563 /* Alert+extension.swift */,
+			);
+			path = OtherFiles;
+			sourceTree = "<group>";
+		};
+		4DEAD76128E4DB7500273563 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				4DEAD74F28E4D9A200273563 /* Main.storyboard */,
+				4DEAD75528E4D9A300273563 /* Assets.xcassets */,
+				4DEAD75728E4D9A300273563 /* LaunchScreen.storyboard */,
+				4DEAD79F28E4F24700273563 /* UserTableViewCell.swift */,
+				4DEAD7A028E4F24700273563 /* UserTableViewCell.xib */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		4DEAD79828E4F0A300273563 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4DEAD79928E4F0B500273563 /* UserData.swift */,
+				4DEAD79B28E4F0E900273563 /* UserNetworkAPI.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +127,9 @@
 			dependencies = (
 			);
 			name = Test_BabySittor;
+			packageProductDependencies = (
+				4DEAD7A428E50B9300273563 /* SDWebImage */,
+			);
 			productName = Test_BabySittor;
 			productReference = 4DEAD74628E4D9A200273563 /* Test_BabySittor.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +158,9 @@
 				Base,
 			);
 			mainGroup = 4DEAD73D28E4D9A200273563;
+			packageReferences = (
+				4DEAD7A328E50B9300273563 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 4DEAD74728E4D9A200273563 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DEAD7A228E4F24700273563 /* UserTableViewCell.xib in Resources */,
 				4DEAD75928E4D9A300273563 /* LaunchScreen.storyboard in Resources */,
 				4DEAD75628E4D9A300273563 /* Assets.xcassets in Resources */,
 				4DEAD75128E4D9A200273563 /* Main.storyboard in Resources */,
@@ -141,9 +189,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DEAD74E28E4D9A200273563 /* ViewController.swift in Sources */,
+				4DEAD79A28E4F0B500273563 /* UserData.swift in Sources */,
+				4DEAD79C28E4F0E900273563 /* UserNetworkAPI.swift in Sources */,
+				4DEAD74E28E4D9A200273563 /* UtilisateursViewController.swift in Sources */,
+				4DEAD7A128E4F24700273563 /* UserTableViewCell.swift in Sources */,
 				4DEAD74A28E4D9A200273563 /* AppDelegate.swift in Sources */,
 				4DEAD75428E4D9A200273563 /* Test_BabySittor.xcdatamodeld in Sources */,
+				4DEAD7A728E50D5600273563 /* Alert+extension.swift in Sources */,
 				4DEAD74C28E4D9A200273563 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,7 +272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +326,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -299,6 +351,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,9 +359,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "rodolphe.schnetzer.Test-BabySittor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -327,6 +383,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,9 +391,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "rodolphe.schnetzer.Test-BabySittor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -362,6 +422,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4DEAD7A328E50B9300273563 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4DEAD7A428E50B9300273563 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4DEAD7A328E50B9300273563 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		4DEAD75228E4D9A200273563 /* Test_BabySittor.xcdatamodeld */ = {
